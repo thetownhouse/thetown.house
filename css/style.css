@@ -643,6 +643,16 @@ img, video, object {
   .headshot {
     height: 286px;
     width: 286px; } }
+.site-header {
+  width: 100%;
+  background: #0099ff; }
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #0099ff; }
+
 #about_container {
   display: none; }
 
