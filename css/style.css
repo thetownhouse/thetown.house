@@ -356,11 +356,6 @@ td,
 th {
   padding: 0; }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 .is-hidden {
   display: none; }
 
@@ -384,7 +379,13 @@ th {
   .o-nav-list li {
     float: left;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    cursor: pointer; }
+
+.o-clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .o-a11y {
   display: inline-block;
@@ -437,10 +438,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 300;
-  letter-spacing: 2px;
   margin-top: 0;
-  margin-bottom: .5rem;
-  text-transform: uppercase; }
+  margin-bottom: .5rem; }
 
 h1, h2 {
   line-height: 1.2; }
@@ -448,10 +447,7 @@ h1, h2 {
 h1, .alpha {
   font-size: 2.7rem;
   font-weight: 300;
-  letter-spacing: 4px;
   margin-bottom: 1rem; }
-  h1.center, .alpha.center {
-    text-align: center; }
 
 h2, .beta {
   font-size: 1.889rem;
@@ -491,10 +487,6 @@ small {
 
 b, strong {
   font-weight: 700; }
-
-time {
-  letter-spacing: 2px;
-  text-transform: uppercase; }
 
 ul, ol {
   margin: 0;
@@ -536,7 +528,7 @@ pre {
   margin: 1.8em 0; }
 
 a,
-.anchorish {
+.link {
   color: #0C81E8;
   text-decoration: none;
   cursor: pointer; }
@@ -552,6 +544,15 @@ a:hover {
 
 a:active {
   color: #7FBBF0; }
+
+.button-list {
+  padding: 0 24px; }
+  .button-list li {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 8px 24px; }
+  .button-list li:hover,
+  .button-list li.is-on {
+    color: rgba(0, 0, 0, 0.87); }
 
 .button,
 .button:link,
@@ -643,7 +644,8 @@ img, video, object {
     height: 286px;
     width: 286px; } }
 .people {
-  clear: both; }
+  clear: both;
+  margin-top: 24px; }
 
 .person {
   position: relative;

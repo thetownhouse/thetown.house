@@ -3,7 +3,7 @@
 // LINKS
 
 a,
-.anchorish {
+.link {
     color: $blue500; 
     text-decoration: none; 
     cursor: pointer;     
@@ -17,6 +17,18 @@ a:active 	{color: $blue300;}  // selected
 
 
 
+
+.button-list {
+  padding: 0 $space;
+  li {
+    color: $black-secondary;
+    padding: $space-third $space;
+  }
+  li:hover,
+  li.is-on {
+    color: $black-primary;
+  }
+}
 
 // BUTTONS
 

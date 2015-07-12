@@ -1,5 +1,6 @@
 
 // OOCSS STYLES
+// repeated styles for use in markup
 
 
 // layout
@@ -16,11 +17,20 @@
     float: left;
     margin: 0; 
     padding: 0;
+    cursor: pointer;
+  }
+}
+
+.o-clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
 
-// Hiding/showing for words and other things
+// hiding/showing for words and other things
 
 .o-a11y {
   display: inline-block;
@@ -34,22 +44,18 @@
   display: none !important;
 }
 
-
-
-@media screen and (min-width: $md-breakpoint) {
-  .o-hide-sm {
-    display: inline-block !important;
+  @media screen and (min-width: $md-breakpoint) {
+    .o-hide-sm {
+      display: inline-block !important;
+    }
+    .o-hide-md {
+      display: none !important;
+    }
   }
   
-  .o-hide-md {
-    display: none !important;
+  @media screen and (min-width: $lg-breakpoint) {  
+    .o-hide-lg {
+      display: none !important;
+    }
   }
-  
-}
-
-@media screen and (min-width: $lg-breakpoint) {  
-  .o-hide-lg {
-    display: none !important;
-  }
-}
 

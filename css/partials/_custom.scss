@@ -34,15 +34,6 @@
 }
 
 
-// cross-browser inline-block -- bit.ly/KuaPpr 
-
-%inline-block {
-	display: -moz-inline-stack; 
-	display: inline-block;
-	zoom: 1;
-	*display: inline;		
-}	
-
 
 // clearfix 
 
@@ -54,15 +45,16 @@
   }
 }
 
-// old clearfix for markup
 
-.clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+
+// cross-browser inline-block -- bit.ly/KuaPpr 
+
+%inline-block {
+	display: -moz-inline-stack; 
+	display: inline-block;
+	zoom: 1;
+	*display: inline;		
+}	
 
 
 

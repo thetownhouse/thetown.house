@@ -3,15 +3,12 @@
 
 
 // GRID 
-// Bourbon Neat variables 
 
-$grid-columns: 16;
 $max-width: 1500px;
 
 
 // BREAKPOINTS
 // for mixin, mobile first
-
 
 $sm-breakpoint: 30em; // 480px
 $md-breakpoint: 48em; // 768px
@@ -20,6 +17,19 @@ $xl-breakpoint: 75em; // 1200px
 
 
 // COLOR PALETTE
+
+$black: #000;
+$black-primary: rgba(0,0,0,.87);
+$black-secondary: rgba(0,0,0,.54);
+$black-tertiary: rgba(0,0,0,.26);
+$black-divider: rgba(0,0,0,.12);
+$black-bg: rgba(0,0,0,.06);
+
+$white: #FFF;
+$white-primary: rgba(255,255,255,.87);
+$white-secondary: rgba(255,255,255,.54);
+$white-tertiary: rgba(255,255,255,.26);
+$white-divider: rgba(255,255,255,.12);
 
 $blue50:  #EBF4FC;
 $blue100: #CFE6FA;
@@ -39,19 +49,6 @@ $beige300: #CECCC8;
 
 $red500: #D0021B;
 $red600: #9E0214;
-
-$black: #000;
-$black-primary: rgba(0,0,0,.87);
-$black-secondary: rgba(0,0,0,.54);
-$black-tertiary: rgba(0,0,0,.26);
-$black-divider: rgba(0,0,0,.12);
-$black-bg: rgba(0,0,0,.06);
-
-$white: #FFF;
-$white-primary: rgba(255,255,255,.87);
-$white-secondary: rgba(255,255,255,.54);
-$white-tertiary: rgba(255,255,255,.26);
-$white-divider: rgba(255,255,255,.12);
 
 $green500: #4CAF50;
 
@@ -97,8 +94,6 @@ $milli:   .778rem;   // 14
 $micro:   .667rem;   // 12 
 $nano:    .611rem;   // 11 
 $pico:    .556rem;   // 10 
-
-$glyphish: 1.556rem;  // 28 is base glyphish size
 
 
 // SPACING
