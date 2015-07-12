@@ -16,7 +16,7 @@
   float: left;
   list-style: none;
   text-align: center;
-  &__headshot {
+  &__photo {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -25,15 +25,10 @@
     background-color: $black-tertiary;
     position: absolute;
     z-index: $layer1;
+    cursor: pointer;
   }
   &__name {
     margin-top: 310px;
-  }
-  &__title {
-    
-  }
-  &__skills {
-    
   }
 }
 

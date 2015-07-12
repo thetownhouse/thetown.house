@@ -9,6 +9,10 @@
 @import "partials/oocss";
 
 
+// PLUGINS
+@import "plugins/flickity";
+
+
 // ELEMENTS
 @import "elements/base";
 @import "elements/text";
@@ -18,9 +22,9 @@
 
 // MODULES
 // combinations of elements
-@import "modules/carousel";
 @import "modules/base";
 @import "modules/about";
 @import "modules/townhouse";
 @import "modules/people";
+@import "modules/cards";
 

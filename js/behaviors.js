@@ -1,7 +1,7 @@
-$( function() {
+$(function() {
   
-  // init Isotope
-  var $container = $('#isotope').isotope({
+  // initialize Isotope
+  var $container = $('.js-isotope').isotope({
     itemSelector: '.person',
     layoutMode: 'masonry',
     getSortData: {
@@ -27,14 +27,12 @@ $( function() {
     $container.isotope({ sortBy: sortValue });
   });
   
-});
-
-$(document).ready(function() {
-  $("#carousel").tinycarousel({
-    bullets   : true,
-    buttons   : false,
-    animation : true,
-    animationTime : 1000,
-    start     : 1
+  // show and hide cards
+  $('.person').on('click', function() {
+    $('.cards').fadeIn();
   });
+  $('.card').on('click', function() {
+    $('.cards').fadeOut();
+  });
+
 });
