@@ -1,0 +1,22 @@
+// THE TOWNHOUSE CSS 
+
+
+// PARTIALS
+@import "partials/normalize";
+@import "partials/settings";
+@import "partials/custom";
+@import "partials/states";
+@import "partials/oocss";
+
+
+// ELEMENTS
+@import "elements/base";
+@import "elements/text";
+@import "elements/buttons";
+@import "elements/media";
+
+
+// MODULES
+// combinations of elements
+@import "modules/people";
+

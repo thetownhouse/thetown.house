@@ -1,0 +1,128 @@
+// THEME CONFIGURATION
+
+
+
+// GRID 
+// Bourbon Neat variables 
+
+$grid-columns: 16;
+$max-width: 1500px;
+
+
+// BREAKPOINTS
+// for mixin, mobile first
+
+
+$sm-breakpoint: 30em; // 480px
+$md-breakpoint: 48em; // 768px
+$lg-breakpoint: 64em; // 1024px
+$xl-breakpoint: 75em; // 1200px
+
+
+// COLOR PALETTE
+
+$blue50:  #EBF4FC;
+$blue100: #CFE6FA;
+$blue200: #ADD5F7;
+$blue300: #7FBBF0;
+$blue400: #52A3EB;
+$blue500: #0C81E8;
+$blue600: #0A72CE;
+$blue700: #08579C;
+$blue800: #123554;
+$blue900: #031E36;
+
+$beige50:  #F0F0F0;
+$beige100: #E6E4DF;
+$beige200: #DAD8D3;
+$beige300: #CECCC8;
+
+$red500: #D0021B;
+$red600: #9E0214;
+
+$black: #000;
+$black-primary: rgba(0,0,0,.87);
+$black-secondary: rgba(0,0,0,.54);
+$black-tertiary: rgba(0,0,0,.26);
+$black-divider: rgba(0,0,0,.12);
+$black-bg: rgba(0,0,0,.06);
+
+$white: #FFF;
+$white-primary: rgba(255,255,255,.87);
+$white-secondary: rgba(255,255,255,.54);
+$white-tertiary: rgba(255,255,255,.26);
+$white-divider: rgba(255,255,255,.12);
+
+$green500: #4CAF50;
+
+
+// BORDERS
+
+$frame-large: 5px solid $black-primary;
+
+
+// SHADOWS
+
+$shadow-level-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-level-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow-level-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-level-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$shadow-level-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+
+// TYPOGRAPHY
+
+$sans: "Lato","Open Sans",sans-serif;
+$serif: Georgia,sans-serif;
+$mono: "Courier New", Courier, monospace;
+$tracking: 2px;
+$tracking-loose: 4px;
+
+
+// TYPE SIZES
+// http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+
+$giga:    5rem;     // 90  
+$mega:    4rem;     // 72  
+$kilo:    3.14rem;  // 57  
+
+$alpha:   2.7rem;   // 49  h1
+$beta:    1.889rem; // 34  h2
+$gamma:   1.389rem; // 25  h3
+$delta:   1.167rem; // 21  h4
+$epsilon: 1rem;     // 18  h5, p
+$zeta:    .889rem;  // 16  h6
+
+$milli:   .778rem;   // 14
+$micro:   .667rem;   // 12 
+$nano:    .611rem;   // 11 
+$pico:    .556rem;   // 10 
+
+$glyphish: 1.556rem;  // 28 is base glyphish size
+
+
+// SPACING
+
+$space-triple: 72px; 
+$space-52: 60px;
+$space-double: 48px;
+$space-32: 36px; 
+$space: 24px; // equal to body line-height
+$space-34: 18px; 
+$space-half: 12px; 
+$space-third: 8px; 
+$space-fourth: 6px; 
+
+
+
+// LAYERS
+
+$layer1: 1; // content
+$layer2: 2; // hovers
+$layer3: 3; // cloak
+$layer4: 4; // lightbox
+$layer5: 5; // lightbox content
+
+
+
+

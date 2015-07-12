@@ -1,0 +1,43 @@
+// MEDIA
+
+
+
+img, video, object { 
+  max-width: 100% 
+}
+
+
+.about-image img {
+  height: auto;
+  width: 100%;
+    
+}
+
+
+.headshot {
+  background-size: cover;
+  background-position: center center;
+  height: 145px;
+  width: 145px;
+}
+
+@media screen and (min-width: $md-breakpoint) {
+  .headshot {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: $lg-breakpoint) {
+  .headshot {
+    height: 238px;
+    width: 238px;
+  }
+}
+
+@media screen and (min-width: $xl-breakpoint) {
+  .headshot {
+    height: 286px;
+    width: 286px;
+  }
+}

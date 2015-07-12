@@ -1,4 +1,140 @@
-<html>
-  <body>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if IE]><![endif]-->
+	<title>The Townhouse</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+	<div id="container">
+  	
+		<header>
+			<ul class="o-nav-list nav-global">
+				<li><a href="#nowhere" title="About">About</a></li>
+				<li><a href="#nowhere" title="The Townhouse">The Townhouse</a></li>
+				<li><a href="#nowhere" title="People">People</a></li>
+			</ul>
+		</header>
+		
+		<main>
+		
+  		<section id="about">
+    		<h1>About us</h1>
+    		<p>Text stuff</p>
+    		<a href="">hello@thetown.house</a>
+  		</section>
+  
+  		<section id="the-townhouse">
+    		<!-- SVG -->
+  		</section>
+  
+  		<section id="people">
+    		
+        <nav class="nav-people">
+      
+            <div class="button-bar" id="filters">
+              <ul class="o-nav-list">
+      					<li data-filter="*" class="is-on">All</li>
+      					<li data-filter="designer">Designers</li>
+      					<li data-filter="developer">Developers</li>
+      				</ul>
+            </div>
+            
+            <div class="button-bar" id="sorts">
+              <ul class="o-nav-list">
+      					<li data-sort="random" class="is-on">Random order</li>
+      					<li data-sort="name">Name</li>
+      				</ul>
+            </div>
+              		
+        </nav>
+      
+        <ul class="people js-isotope">
+                
+            <li class="person" data-name="Jonnie Hallman" data-skills="design development">
+              <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
+              <h2 class="person__name">Jonnie Hallman</h2>
+              <h3 class="person__title">developer</h3>
+              <h4 class="person__skills">Ruby developer, Rails hater, coffeemaker, pizza lover</h4>
+            </li>
+            
+            <li class="person" data-name="Jen Mussari" data-skills="illustration lettering">
+              <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
+              <h2 class="person__name">Jen Mussari</h2>
+              <h3 class="person__title">illustrator</h3>
+              <h4 class="person__skills">illustrator, letterer, motorcycle enthusiast</h4>
+            </li>
+            
+            <li class="person" data-name="Meg Lewis" data-skills="branding design development">
+              <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
+              <h2 class="person__name">Meg Lewis</h2>
+              <h3 class="person__title">designer</h3>
+              <h4 class="person__skills">brand designer, dancer, high fiver, butt afficianado</h4>
+            </li>
+            
+        </ul>
+    
+  		</section>
+		
+		</main>
+		
+		<footer>
+		  <h6>Yay!</h6>
+		</footer>
+
+	</div>
+
+
+  <script src="js/isotope.pkgd.min.js" >
+  
+  <script>
+  
+    $( function() {
+
+      // init Isotope
+      var $container = $('.js-isotope').isotope({
+        
+        itemSelector: 'li',
+        layoutMode: 'fitRows',
+        sortBy: 'random',
+        getSortData: {
+          name: '[data-name]', // value of attribute
+          skills: '[data-skills]' // value of attribute
+        },
+        sortAscending: {
+          name: true,
+          skills: false
+        }
+  
+      });
+    
+      // filter on click
+      $('#filters').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({ filter: filterValue });
+      });
+    
+      // sort on click   
+      $('#sorts').on( 'click', 'li', function() {
+        var sortValue = $(this).attr('data-sort');
+        $container.isotope({ sortBy: sortValue }); // why isn't this working?
+        console.log(sortValue);
+      });
+      
+    });
+    
+
+  
+  </script>   
+
+</body>
 </html>
+
+

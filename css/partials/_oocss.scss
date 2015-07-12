@@ -1,0 +1,55 @@
+
+// OOCSS STYLES
+
+
+// layout
+
+.o-clear {
+  clear:both;
+}
+
+.o-nav-list {
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+  li {
+    float: left;
+    margin: 0; 
+    padding: 0;
+  }
+}
+
+
+// Hiding/showing for words and other things
+
+.o-a11y {
+  display: inline-block;
+  height: 0;
+  text-indent: -99999em;
+  width: 0;
+  float: left; // remove from layout
+}
+
+.o-hide-sm {
+  display: none !important;
+}
+
+
+
+@media screen and (min-width: $md-breakpoint) {
+  .o-hide-sm {
+    display: inline-block !important;
+  }
+  
+  .o-hide-md {
+    display: none !important;
+  }
+  
+}
+
+@media screen and (min-width: $lg-breakpoint) {  
+  .o-hide-lg {
+    display: none !important;
+  }
+}
+

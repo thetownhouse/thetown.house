@@ -1,0 +1,20 @@
+
+
+// STATES
+
+.is-hidden {
+	display: none;
+}
+
+.is-filled {
+  font-weight: bold !important;
+}
+
+
+.is-off {
+  opacity: .3;
+  text-decoration: line-through;
+}
+.is-open {
+  max-height: none !important;
+}
