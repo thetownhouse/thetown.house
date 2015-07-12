@@ -24,7 +24,7 @@ $( function() {
 });
 
 $(document).ready(function() {
-  $("#container").tinycarousel({
+  $("#carousel").tinycarousel({
     bullets   : true,
     buttons   : false,
     animation : true,
