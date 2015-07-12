@@ -1,0 +1,31 @@
+li[class*="icon-"] {
+  border-radius: 50%;
+  color: $white;
+  list-style: none;
+  position: absolute;
+}
+
+.icon-designer {
+  background-color: $red500;
+}
+
+.icon-developer {
+  background-color: $blue500;
+}
+
+.icon-writer {
+  background-color: $blue500;
+}
+
+.icon-photographer {
+  background-color: $green500;
+}
+
+.icon-illustrator {
+  background-color: $red500;
+}
+
+.icon-investor {
+  background-color: $green500;
+}
+
