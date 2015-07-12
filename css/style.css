@@ -618,31 +618,30 @@ a:visited.outline {
   font-size: 1rem;
   padding: .65em 3em .7em; }
 
-img, video, object {
-  max-width: 100%; }
+li[class*="icon-"] {
+  border-radius: 50%;
+  color: #FFF;
+  list-style: none;
+  position: absolute; }
 
-.about-image img {
-  height: auto;
-  width: 100%; }
+.icon-designer {
+  background-color: #D0021B; }
 
-.headshot {
-  background-size: cover;
-  background-position: center center;
-  height: 145px;
-  width: 145px; }
+.icon-developer {
+  background-color: #0C81E8; }
 
-@media screen and (min-width: 48em) {
-  .headshot {
-    height: 180px;
-    width: 180px; } }
-@media screen and (min-width: 64em) {
-  .headshot {
-    height: 238px;
-    width: 238px; } }
-@media screen and (min-width: 75em) {
-  .headshot {
-    height: 286px;
-    width: 286px; } }
+.icon-writer {
+  background-color: #0C81E8; }
+
+.icon-photographer {
+  background-color: #4CAF50; }
+
+.icon-illustrator {
+  background-color: #D0021B; }
+
+.icon-investor {
+  background-color: #4CAF50; }
+
 .site-header {
   width: 100%;
   background: #0099ff; }
@@ -677,5 +676,3 @@ img, video, object {
     z-index: 1; }
   .person__name {
     margin-top: 300px; }
-
-/*# sourceMappingURL=style.css.map */
