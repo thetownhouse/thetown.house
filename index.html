@@ -40,7 +40,48 @@
     </section>
 
     <section id="people_container">
+      <nav>
+        <ul class="o-nav-list button-list" id="filters">
+          <li data-filter="*" class="is-on">All</li>
+          <li data-filter=".designer">Designers</li>
+          <li data-filter=".developer">Developers</li>
+        </ul>
 
+        <ul class="o-nav-list button-list" id="sorts">
+          <li data-sort="random" class="is-on">Random order</li>
+          <li data-sort="name">Name</li>
+        </ul>
+      </nav>
+
+      <ul class="people js-isotope">
+        <li class="person" data-name="Jonnie Hallman" data-skills="design development">
+          <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
+          <h2 class="person__name">Jonnie Hallman</h2>
+          <h3 class="person__title">developer</h3>
+          <h4 class="person__skills">Ruby developer, Rails hater, coffeemaker, pizza lover</h4>
+        </li>
+
+        <li class="person" data-name="Jen Mussari" data-skills="illustration lettering">
+          <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
+          <h2 class="person__name">Jen Mussari</h2>
+          <h3 class="person__title">illustrator</h3>
+          <h4 class="person__skills">illustrator, letterer, animal hugger, motorcycle enthusiast</h4>
+        </li>
+
+        <li class="person" data-name="Meg Lewis" data-skills="branding design development">
+          <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
+          <h2 class="person__name">Meg Lewis</h2>
+          <h3 class="person__title">designer</h3>
+          <h4 class="person__skills">brand designer, dancer, high fiver, butt afficianado</h4>
+        </li>
+
+        <li class="person" data-name="Frank Chimero" data-skills="branding design development">
+          <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
+          <h2 class="person__name">Frank Chimero</h2>
+          <h3 class="person__title">designer</h3>
+          <h4 class="person__skills">writer, pizza lover, bad photo taker</h4>
+        </li>
+      </ul>
     </section>
 
     <footer class="site-footer">

@@ -648,10 +648,7 @@ img, video, object {
   background: #0099ff; }
 
 .site-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #0099ff; }
+  display: none; }
 
 #about_container {
   display: none; }
