@@ -615,19 +615,16 @@ small {
 b, strong {
   font-weight: 700; }
 
-ul, ol {
-  margin: 0;
-  padding: 0; }
-  ul li, ol li {
-    margin-bottom: .8rem; }
-  ul ul, ul ol, ol ul, ol ol {
-    margin-bottom: 1.6rem;
-    margin-top: .8rem; }
-  ul ul li, ol ul li {
-    list-style: square; }
-  ul ul ul, ol ul ul {
-    list-style: disc;
-    margin-bottom: 0; }
+ul li, ol li {
+  margin-bottom: .8rem; }
+ul ul, ul ol, ol ul, ol ol {
+  margin-bottom: 1.6rem;
+  margin-top: .8rem; }
+ul ul li, ol ul li {
+  list-style: square; }
+ul ul ul, ol ul ul {
+  list-style: disc;
+  margin-bottom: 0; }
 
 blockquote {
   color: rgba(0, 0, 0, 0.87);

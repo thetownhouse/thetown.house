@@ -31,7 +31,7 @@ $(function() {
   $('.person').on('click', function() {
     $('.cards').fadeIn();
   });
-  $('.card').on('click', function() {
+  $('.card__close').on('click', function() {
     $('.cards').fadeOut();
   });
 
