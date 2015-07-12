@@ -643,6 +643,19 @@ img, video, object {
   .headshot {
     height: 286px;
     width: 286px; } }
+.site-header {
+  width: 100%;
+  background: #0099ff; }
+
+.site-footer {
+  display: none; }
+
+#about_container {
+  display: none; }
+
+#townhouse_container {
+  display: none; }
+
 .people {
   clear: both;
   margin-top: 24px; }
@@ -664,3 +677,5 @@ img, video, object {
     z-index: 1; }
   .person__name {
     margin-top: 300px; }
+
+/*# sourceMappingURL=style.css.map */
