@@ -14,8 +14,8 @@
 
 <body>
   <div class="site-container">
-    <header class="site-header">
-      Townhouse
+    
+    <header class="site-header o-clearfix">
       <nav>
         <ul class="o-nav-list nav-global bullets">
           <li class="bullet" data-slide="0">About</li>
@@ -36,71 +36,71 @@
     </section>
 
     <section id="townhouse-container">
-      photo here :)
+      <img src="" width="320" height="568" style="border: 1px solid #CCC;">
     </section>
 
     <section id="people-container">
       <nav>
         <ul class="o-nav-list button-list" id="filters">
-          <li data-filter="*" class="is-on">All</li>
+          <li data-filter="*">All</li>
           <li data-filter=".designer">Designers</li>
           <li data-filter=".developer">Developers</li>
+          <li data-filter=".writer">Writers</li>
+          <li data-filter=".illustrator">Illustrators</li>
+          <li data-filter=".photographer">Photographers</li>
+          <li data-filter=".investor">Investors</li>
         </ul>
 
         <ul class="o-nav-list button-list" id="sorts">
-          <li data-sort="random" class="is-on">Random order</li>
-          <li data-sort="name">Name</li>
+          <li data-sort="random">Random order</li>
+          <li data-sort="name">Alphabetical</li>
+          <li data-sort="floor">Floor</li>
         </ul>
       </nav>
 
-      <ul class="people js-isotope">
-        <li class="person" data-name="Jonnie Hallman" data-skills="design development">
+      <ul class="people" id="isotope">
+        <li class="person developer designer" data-floor="3">
           <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
           <h2 class="person__name">Jonnie Hallman</h2>
-          <h3 class="person__title">developer</h3>
-          <h4 class="person__skills">Ruby developer, Rails hater, coffeemaker, pizza lover</h4>
+          <p class="person__skills">Ruby developer, Rails hater, coffeemaker, pizza lover</p>
           <ul class="icons">
-            <li class="icon-designer">1</li>
             <li class="icon-developer">1</li>
+            <li class="icon-designer">2</li>
           </ul>
         </li>
 
-        <li class="person" data-name="Jen Mussari" data-skills="illustration lettering">
+        <li class="person illustrator" data-floor="4">
           <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
           <h2 class="person__name">Jen Mussari</h2>
-          <h3 class="person__title">illustrator</h3>
-          <h4 class="person__skills">illustrator, letterer, animal hugger, motorcycle enthusiast</h4>
+          <p class="person__skills">illustrator, letterer, animal hugger, motorcycle enthusiast</p>
           <ul class="icons">
-            <li class="icon-designer">1</li>
-            <li class="icon-developer">1</li>
+            <li class="icon-illustrator">1</li>
           </ul>
         </li>
 
-        <li class="person" data-name="Meg Lewis" data-skills="branding design development">
+        <li class="person designer" data-floor="4">
           <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
           <h2 class="person__name">Meg Lewis</h2>
-          <h3 class="person__title">designer</h3>
-          <h4 class="person__skills">brand designer, dancer, high fiver, butt afficianado</h4>
+          <p class="person__skills">brand designer, dancer, high fiver, butt afficianado</p>
           <ul class="icons">
             <li class="icon-designer">1</li>
-            <li class="icon-developer">1</li>
           </ul>
         </li>
 
-        <li class="person" data-name="Frank Chimero" data-skills="branding design development">
+        <li class="person designer writer" data-floor="3">
           <div class="person__headshot" style="background-image: url('http://placekitten.com/g/200/300');"></div>
           <h2 class="person__name">Frank Chimero</h2>
-          <h3 class="person__title">designer</h3>
-          <h4 class="person__skills">writer, pizza lover, bad photo taker</h4>
+          <p class="person__skills">writer, pizza lover, bad photo taker</p>
           <ul class="icons">
             <li class="icon-designer">1</li>
-            <li class="icon-developer">1</li>
+            <li class="icon-writer">2</li>
+            <li class="icon-developer">3</li>
           </ul>
         </li>
       </ul>
     </section>
 
-    <footer class="site-footer">
+    <footer class="site-footer o-clearfix">
       Feet.
     </footer>
   </div>

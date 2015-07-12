@@ -1,8 +1,39 @@
+.icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 li[class*="icon-"] {
+  position: absolute;
+  z-index: $layer2;
   border-radius: 50%;
   color: $white;
+  text-align: center;
   list-style: none;
-  position: absolute;
+  &:nth-child(6n + 1) {
+    top: 1%;
+    left: 1%;
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+  }
+  &:nth-child(6n + 2) {
+    top: 50%;
+    left: 10%;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  &:nth-child(6n + 3) {
+    top: 10%;
+    left: 85%;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
 }
 
 .icon-designer {
@@ -14,15 +45,15 @@ li[class*="icon-"] {
 }
 
 .icon-writer {
-  background-color: $blue500;
-}
-
-.icon-photographer {
   background-color: $green500;
 }
 
 .icon-illustrator {
   background-color: $red500;
+}
+
+.icon-photographer {
+  background-color: $blue500;
 }
 
 .icon-investor {

@@ -15,6 +15,7 @@
   margin: 0 $space;
   float: left;
   list-style: none;
+  text-align: center;
   &__headshot {
     width: 300px;
     height: 300px;
@@ -26,7 +27,7 @@
     z-index: $layer1;
   }
   &__name {
-    margin-top: 300px;
+    margin-top: 310px;
   }
   &__title {
     
