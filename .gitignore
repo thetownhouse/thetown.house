@@ -8,7 +8,6 @@ db/*.sql
 db/*.sql.gz
 .bundle
 .sass-cache
-*.css.map
 
 # Development-related files
 .DS_Store
