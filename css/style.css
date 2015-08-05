@@ -557,11 +557,6 @@ body {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.87); }
 
-.site-container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1500px; }
-
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 300;
@@ -730,11 +725,52 @@ li[class*="icon-"] {
   background-color: #4CAF50; }
 
 .site-header {
-  width: 100%;
-  background: #0099ff; }
+  position: absolute;
+  background: #0099ff;
+  z-index: 1000; }
 
 .site-footer {
   display: none; }
+
+.site-nav {
+  text-align: center; }
+  .site-nav > li {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+
+.page-container {
+  min-height: 100%;
+  overflow: hidden;
+  display: block;
+  position: relative; }
+  .page-container .page {
+    position: absolute;
+    width: 90%;
+    min-height: 100%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .page-container .content-container {
+    width: 100%; }
+  .page-container #about-container {
+    left: -90%;
+    background: #0099ff;
+    z-index: 100; }
+  .page-container #townhouse-container {
+    left: 0;
+    background: #333333; }
+  .page-container #people-container {
+    left: 90%;
+    background: #efefef;
+    z-index: 100; }
+  .page-container #about-container,
+  .page-container #townhouse-container,
+  .page-container #people-container {
+    transition: left 0.5s ease; }
+    .page-container #about-container.active,
+    .page-container #townhouse-container.active,
+    .page-container #people-container.active {
+      left: 0; }
 
 #about_container {
   display: none; }
@@ -810,3 +846,5 @@ li[class*="icon-"] {
   .card__links dt {
     float: left;
     margin-right: 5px; }
+
+/*# sourceMappingURL=style.css.map */

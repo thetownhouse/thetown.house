@@ -1,6 +1,6 @@
 // BASE
 
-// standardize box model across browsers! IE8 and up. bit.ly/1eXrOej 
+// standardize box model across browsers! IE8 and up. bit.ly/1eXrOej
 *, *:before, *:after {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 html {
-  font-size: 100%; // 16px 
+  font-size: 100%; // 16px
 }
 
 @media screen and (min-width: $sm-breakpoint) {
@@ -34,15 +34,8 @@ html {
 
 body {
   font-family: $sans;
-  font-weight: 300; 
+  font-weight: 300;
   font-style: normal;
   line-height: 1.4;
   color: $black-primary;
 }
-
-.site-container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1500px;
-}
-

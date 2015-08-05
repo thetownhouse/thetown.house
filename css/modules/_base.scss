@@ -1,8 +1,76 @@
 .site-header {
-  width: 100%;
+  position: absolute;
+  // width: 100%;
   background: #0099ff;
+  z-index: 1000;
 }
 
 .site-footer {
   display: none;
 }
+
+.site-nav {
+  text-align: center;
+
+  > li {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.page-container {
+  // width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+
+  .page {
+    position: absolute;
+    width: 90%;
+    min-height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  #about-container {
+    left: -90%;
+    background: #0099ff;
+    z-index: 100;
+  }
+  #townhouse-container {
+    left: 0;
+    background: #333333;
+  }
+  #people-container {
+    left: 90%;
+    background: #efefef;
+    z-index: 100;
+  }
+
+  #about-container,
+  #townhouse-container,
+  #people-container {
+    transition: left 0.5s ease;
+    &.active {
+      left: 0;
+    }
+  }
+}
+
+// #about-container,
+// #townhouse-container,
+// #people-container {
+//   width: 100%;
+//   position: inline-block;
+// }
+
+// #about-container {
+//   position: absolute;
+//   left: 100%;
+// }
