@@ -4,7 +4,8 @@
     function SB() {}
 
     SB.init = function() {
-      return this.initSiteNav();
+      this.initSiteNav();
+      return this.initPeoplePage();
     };
 
     SB.initSiteNav = function() {
@@ -12,6 +13,10 @@
         $('.active').toggleClass("active");
         return $('#' + this.dataset.targetPage).toggleClass("active");
       });
+    };
+
+    SB.initPeoplePage = function() {
+      return console.log("People!");
     };
 
     return SB;
