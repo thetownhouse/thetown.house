@@ -5,6 +5,7 @@
 
     SB.init = function() {
       this.initSiteNav();
+      this.initAboutPage();
       return this.initPeoplePage();
     };
 
@@ -15,8 +16,55 @@
       });
     };
 
+    SB.initAboutPage = function() {
+      var $caption, $gallery, flkty;
+      $gallery = $('.gallery').flickity({
+        cellSelector: 'img',
+        imagesLoaded: true,
+        percentPosition: false
+      });
+      $caption = $('.caption');
+      flkty = $gallery.data('flickity');
+      return $gallery.on('cellSelect', function() {
+        return $caption.text(flkty.selectedElement.alt);
+      });
+    };
+
     SB.initPeoplePage = function() {
-      return console.log("People!");
+      var $container;
+      $container = $('.js-isotope').isotope({
+        itemSelector: '.person',
+        layoutMode: 'masonry',
+        getSortData: {
+          name: '.person__name',
+          floor: '[data-floor]'
+        },
+        sortAscending: {
+          name: true,
+          floor: false
+        },
+        sortBy: 'random'
+      });
+      $('#filters li').click(function() {
+        var filterValue;
+        filterValue = $(this).attr('data-filter');
+        return $container.isotope({
+          filter: filterValue
+        });
+      });
+      $('#sorts li').click(function() {
+        var sortValue;
+        sortValue = $(this).attr('data-sort');
+        return $container.isotope({
+          sortBy: sortValue
+        });
+      });
+      $('.person').click(function() {
+        return $('.cards').fadeIn();
+      });
+      return $('.card__close').click(function() {
+        return $('.cards').fadeOut();
+      });
     };
 
     return SB;
