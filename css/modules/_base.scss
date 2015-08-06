@@ -42,6 +42,10 @@ $header-height: 1.5rem * 5;
     min-height: 100%;
     margin-left: 5%;
     margin-right: 5%;
+
+    &.active {
+      position: relative;
+    }
   }
 
   .content-container {

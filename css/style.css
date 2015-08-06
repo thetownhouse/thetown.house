@@ -753,6 +753,8 @@ li[class*="icon-"] {
     min-height: 100%;
     margin-left: 5%;
     margin-right: 5%; }
+    .page-container .page.active {
+      position: relative; }
   .page-container .content-container {
     width: 100%; }
   .page-container #about-container {
