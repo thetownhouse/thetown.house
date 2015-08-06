@@ -726,7 +726,7 @@ li[class*="icon-"] {
 
 .site-header {
   position: absolute;
-  background: #0099ff;
+  width: 100%;
   z-index: 1000; }
 
 .site-footer {
@@ -747,6 +747,7 @@ li[class*="icon-"] {
   .page-container .page {
     position: absolute;
     width: 90%;
+    padding-top: 7.5rem;
     min-height: 100%;
     margin-left: 5%;
     margin-right: 5%; }

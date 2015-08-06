@@ -1,7 +1,8 @@
+$header-height: 1.5rem * 5;
+
 .site-header {
   position: absolute;
-  // width: 100%;
-  background: #0099ff;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -29,6 +30,9 @@
   .page {
     position: absolute;
     width: 90%;
+
+    // potentially not needed
+    padding-top: $header-height;
     min-height: 100%;
     margin-left: 5%;
     margin-right: 5%;
