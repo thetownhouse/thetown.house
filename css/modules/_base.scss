@@ -1,9 +1,15 @@
+// Working/Temporary Styles
+
 $header-height: 1.5rem * 5;
 
 .site-header {
   position: absolute;
   width: 100%;
   z-index: 1000;
+
+  h1 {
+    text-align: center;
+  }
 }
 
 .site-footer {

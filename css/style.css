@@ -728,6 +728,8 @@ li[class*="icon-"] {
   position: absolute;
   width: 100%;
   z-index: 1000; }
+  .site-header h1 {
+    text-align: center; }
 
 .site-footer {
   display: none; }
