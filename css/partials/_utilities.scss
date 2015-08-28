@@ -1,15 +1,15 @@
 
-// OOCSS STYLES
-// repeated styles for use in markup
+// UTILITIES
+// repeated OOCSS styles for use in markup
 
 
 // layout
 
-.o-clear {
+.u-clear {
   clear:both;
 }
 
-.o-nav-list {
+.u-nav-list {
   list-style: none;
   margin: 0; 
   padding: 0;
@@ -21,7 +21,7 @@
   }
 }
 
-.o-clearfix {
+.u-clearfix {
   &:after {
     content: "";
     display: table;
@@ -32,7 +32,7 @@
 
 // hiding/showing for words and other things
 
-.o-a11y {
+.u-a11y {
   display: inline-block;
   height: 0;
   text-indent: -99999em;
@@ -40,21 +40,21 @@
   float: left; // remove from layout
 }
 
-.o-hide-sm {
+.u-hide-sm {
   display: none !important;
 }
 
   @media screen and (min-width: $md-breakpoint) {
-    .o-hide-sm {
+    .u-hide-sm {
       display: inline-block !important;
     }
-    .o-hide-md {
+    .u-hide-md {
       display: none !important;
     }
   }
   
   @media screen and (min-width: $lg-breakpoint) {  
-    .o-hide-lg {
+    .u-hide-lg {
       display: none !important;
     }
   }

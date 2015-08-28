@@ -5,26 +5,23 @@
 @import "partials/normalize";
 @import "partials/settings";
 @import "partials/custom";
-@import "partials/states";
-@import "partials/oocss";
+@import "partials/utilities";
 
 
 // PLUGINS
 @import "plugins/flickity";
 
 
-// ELEMENTS
-@import "elements/base";
-@import "elements/text";
-@import "elements/buttons";
-@import "elements/icons";
+// OBJECTS
+@import "objects/base";
+@import "objects/containers";
+@import "objects/text";
+@import "objects/buttons";
+@import "objects/icons";
+@import "objects/photos";
+@import "objects/cards";
 
-
-// MODULES
-// combinations of elements
-@import "modules/base";
-@import "modules/about";
-@import "modules/townhouse";
-@import "modules/people";
-@import "modules/cards";
+@import "objects/about";
+@import "objects/townhouse";
+@import "objects/people";
 

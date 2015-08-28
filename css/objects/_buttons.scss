@@ -4,16 +4,16 @@
 
 a,
 .link {
-    color: $blue500; 
+    color: $green500; 
     text-decoration: none; 
     cursor: pointer;     
 }
 
-a:link 		{color: $blue500;}  // unvisited  
-a:visited 	{color: $blue500;}  // visited  
+a:link 		{color: $green500;}  // unvisited  
+a:visited 	{color: $green500;}  // visited  
 
-a:hover 	{color: $blue300; }  // mouseover  
-a:active 	{color: $blue300;}  // selected  
+a:hover 	{color: $green400; }  // mouseover  
+a:active 	{color: $green400;}  // selected  
 
 
 
