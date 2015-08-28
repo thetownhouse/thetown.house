@@ -17,22 +17,19 @@ $xl-breakpoint: 75em; // 1200px
 
 
 // COLOR PALETTE
+// shades a la google material, 100-900 light-dark
 
 $black: #000;
-$black-primary: rgba(0,0,0,.87);
-$black-secondary: rgba(0,0,0,.54);
-$black-tertiary: rgba(0,0,0,.26);
-$black-divider: rgba(0,0,0,.12);
-$black-bg: rgba(0,0,0,.06);
+$black-primary: rgba(0,0,0,.70);
+$black-secondary: rgba(0,0,0,.50);
+$black-tertiary: rgba(0,0,0,.30);
+$black-divider: rgba(0,0,0,.10);
 
 $white: #FFF;
-$white-primary: rgba(255,255,255,.87);
-$white-secondary: rgba(255,255,255,.54);
-$white-tertiary: rgba(255,255,255,.26);
-$white-divider: rgba(255,255,255,.12);
-
-
-// shades a la google material, 100-900 light-dark
+$white-primary: rgba(255,255,255,.70);
+$white-secondary: rgba(255,255,255,.50);
+$white-tertiary: rgba(255,255,255,.30);
+$white-divider: rgba(255,255,255,.10);
 
 $green400: #50E3C2;
 $green500: #36C9A8;
@@ -44,6 +41,14 @@ $red400: #EF6060;
 $blue400: #1CB0F8;
 
 $yellow400: #FCD734;
+
+
+// color variables
+
+$headline-color: $green500;
+$text-color: $black-primary;
+$link-color: $green500;
+$strong-color: $green500;
 
 
 
@@ -96,16 +101,16 @@ $layer1: 1; // content
 $layer2: 2; // hovers
 $layer3: 3; // cloak
 $layer4: 4; // lightbox
-$layer5: 5; // lightbox content
+$layer5: 5; // navigation
 
 
 // SHADOWS
 
-$shadow-level-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-$shadow-level-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-$shadow-level-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-$shadow-level-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-$shadow-level-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$shadow5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 
 

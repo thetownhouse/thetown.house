@@ -1,44 +1,54 @@
 
 // HEADINGS
 
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2 {
+	color: $headline-color;
+	font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+h3, h4, h5, h6 {
 	color: $black-primary;
 	font-weight: 300;
 	margin-top: 0;
 	margin-bottom: .5rem;
 }
 
-h1, h2 {
-	line-height: 1.2;
+h1, h2, h3 {
+  text-align: center;
+  line-height: 1.2;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1, .alpha {
+
+h1, .u-alpha {
 	font-size: $alpha;
-	font-weight: 300;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
-h2, .beta {
+h2, .u-beta {
 	font-size: $beta;
-	margin-bottom: 0;
 }
 
-h3, .gamma {
+h3, .u-gamma {
   font-size: $gamma;
   line-height: 1.4;
 }
 
-h4, .delta {
+h4, .u-delta {
 	font-size: $delta;
 	line-height: 1.4;
 }
 
-h5, .epsilon {
+h5, .u-epsilon {
 	font-size: $epsilon;
 	line-height: 1.2;
 }
 
-h6, .zeta {
+h6, .u-zeta {
   text-transform: uppercase;
   letter-spacing: $tracking;
 	color: $black-secondary;
@@ -54,16 +64,13 @@ p, li, dt, dd, label, time {
 	margin-bottom: 1.6rem;
 }
 
-p.lede {
-  font-size: $delta;
-}
-
 small {
   font-size: 85%;
 }
 
 b, strong {
   font-weight: 700;
+  color: $strong-color;
 }
 
 
@@ -72,25 +79,23 @@ b, strong {
 
 ul, ol {
   
+  margin: 0; 
+  padding: 0;
+  clear: both;
+  
   li {
     margin-bottom: .8rem;
   }
   
   // child lists
   ul, ol {
-    margin-bottom: 1.6rem;
-    margin-top: .8rem;
+    margin: 1rem 1rem 2rem;
   }
   
   ul li {
     list-style: square;
   }
   
-  // grandchild lists
-  ul ul {
-    list-style: disc;
-    margin-bottom: 0;
-  }
 }
 
 

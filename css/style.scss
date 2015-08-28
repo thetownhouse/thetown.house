@@ -15,13 +15,17 @@
 // OBJECTS
 @import "objects/base";
 @import "objects/containers";
+@import "objects/navigation";
 @import "objects/text";
 @import "objects/buttons";
 @import "objects/icons";
-@import "objects/photos";
-@import "objects/cards";
 
+// views
 @import "objects/about";
 @import "objects/townhouse";
 @import "objects/people";
+
+// flickity customizations
+@import "objects/slideshow";
+@import "objects/cards";
 

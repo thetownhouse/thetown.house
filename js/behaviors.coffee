@@ -5,28 +5,12 @@
 class window.SB
   @init: ->
     this.initSiteNav()
-    this.initAboutPage()
     this.initPeoplePage()
 
   @initSiteNav: ->
-    $('.site-nav a').click ->
-      $('.active').toggleClass("active")
-      $('#' + @.dataset.targetPage).toggleClass("active")
-
-  @initAboutPage: ->
-    $gallery = $('.gallery').flickity
-      cellSelector: 'img',
-      imagesLoaded: true,
-      percentPosition: false
-
-    $caption = $('.caption')
-
-    # Flickity instance
-    flkty = $gallery.data('flickity')
-
-    $gallery.on 'cellSelect', ->
-      # Set image caption using img's alt
-      $caption.text( flkty.selectedElement.alt )
+    $('.list--sitenav a').click ->
+      $('.is-selected').toggleClass("is-selected")
+      $('.' + @.dataset.targetPage).toggleClass("is-selected")
 
   @initPeoplePage: ->
     $container = $('.js-isotope').isotope
@@ -46,14 +30,19 @@ class window.SB
     $('#filters li').click ->
       filterValue = $(this).attr('data-filter')
       $container.isotope({ filter: filterValue })
+      $('#filters .is-active').toggleClass("is-active")
+      $(this).toggleClass("is-active")
 
     # Sort on click
     $('#sorts li').click ->
       sortValue = $(this).attr('data-sort')
       $container.isotope({ sortBy: sortValue })
+      $('#sorts .is-active').toggleClass("is-active")
+      $(this).toggleClass("is-active")
 
     # Show and hide cards
     $('.person').click ->
+      cardValue = $(this).attr('data-name')
       $('.cards').fadeIn()
     $('.card__close').click ->
       $('.cards').fadeOut()

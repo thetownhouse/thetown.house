@@ -1,24 +1,51 @@
+// PEOPLE 
 
 
-// PEOPLE GRID
+.list--filters, 
+.list--sorts {
+  list-style: none;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    color: $black-secondary;
+  }
+  .is-active {
+    color: $black-primary;
+    text-decoration: underline;
+  }
+}
+
+  .list--filters li {
+    padding: .75rem .75rem .5rem;
+    font-size: $zeta;
+  }
+  
+  .list--sorts li {
+    padding: .1rem .75rem;
+    font-size: $milli;
+  }
 
 
+// grid
 
 .people {
   clear: both;
-  margin-top: $space;
+  margin: $space-double auto;
+  width: 300px;
 }
 
 .person {
   position: relative;
-  width: 222px;
-  margin: 0 $space;
+  width: 150px; // 2col
+  padding: 0 5px;
   float: left;
   list-style: none;
   text-align: center;
   &__photo {
-    width: 300px;
-    height: 300px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background-size: cover;
     background-position: center center;
@@ -28,7 +55,40 @@
     cursor: pointer;
   }
   &__name {
-    margin-top: 310px;
+    color: $black-primary;
+    padding-top: 10px;
+    margin-top: 140px;
+    margin-bottom: 0;
+    font-size: $delta;
+    line-height: 1.2;
+  }
+  &__tags {
+    font-size: $milli;
+    color: $black-secondary;
+    line-height: 1.2;
   }
 }
+
+
+
+
+@media screen and (min-width: $lg-breakpoint) {
+  
+  .people {
+    width: 900px;
+  }
+  
+  .person {
+    width: 300px; // 3col
+    padding: 0 40px 80px;
+    &__photo {
+      width: 220px;
+      height: 220px;
+    }
+    &__name {
+      margin-top: 220px;
+    }
+  }
+}
+
 

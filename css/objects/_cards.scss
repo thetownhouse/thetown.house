@@ -1,23 +1,68 @@
+// CARDS 
+// same flickity.js is used for slideshow, only difference is CSS
+
 .cards {
+
   display: none; // hide until person is clicked
   position: absolute;
-  z-index: $layer3;
+  z-index: $layer5;
   top: 10%;
-  width: 90%;
+  width: 80%;
+  left: 10%;
+
+  // buttons
+
+  .flickity-prev-next-button {
+    width: 48px;
+    height: 48px;
+    background: transparent;
+  }
+  .flickity-prev-next-button:hover {
+    background: transparent;
+  }
+  
+  .flickity-prev-next-button .arrow,
+  .flickity-prev-next-button.no-svg {
+    color: $black-tertiary;
+  }
+  
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
+
+  .flickity-prev-next-button.previous {
+      left: -5%;
+  }
+  .flickity-prev-next-button.next {
+      right: -5%;
+  }
+  
+  // slides
+  
+  .gallery-cell {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    box-shadow: $shadow1;
+    background: $white;
+    padding: 25px;
+    padding-left: 350px; // for photo
+    border: 1px solid $black-divider;
+  }
+
 }
 
-.card {
-  box-shadow: $shadow-level-1;
-  background: $white;
-  padding: $space $space $space 350px;
-  list-style: none;
-  width: 100%;
-  height: 600px;
-  overflow: visible;
-  &__close {
+  .card__close {
     float: right;
   }
-  &__photo {
+  
+  .card__name {
+    text-align: left;
+    color: $black-primary;
+    margin: 0;
+  }
+  
+  .card__photo {
     width: 300px;
     height: 300px;
     margin: 0 $space $space 0;
@@ -29,10 +74,11 @@
     left: 25px;
   }
   
-  &__social {
+  .card__social {
     display: block;
     margin: $space 0;
     height: $space-32;
+    list-style: none;
     li {
       height: $space-32;
       width: $space-32;
@@ -41,15 +87,44 @@
       margin-right: $space-half;
       text-align: center;
       line-height: $space-32;
+      display: inline-block;
     }
     a {
       color: $white;
     }
   }
   
-  &__links dt {
+  
+  .card__bio {
+    font-size: $zeta;
+    line-height: 1.4;
+  }
+  
+  .card__links dt {
     float: left;
     margin-right: 5px;
   }  
+  .card__links dt,
+    .card__links dd {
+    font-size: $zeta;
+    margin-bottom: 0;
+  }
+
+
+
+
+// larger devices
+
+@media screen and ( min-width: $md-breakpoint ) {
+  
+  .cards {
+    
+    .gallery-cell {
+      height: 600px;
+      overflow: visible;
+    }
+    
+  }
+  
 }
 

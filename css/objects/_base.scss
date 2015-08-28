@@ -8,7 +8,7 @@
 
 html,
 body {
-  background-color: $white-primary;
+  background-color: $white;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -18,6 +18,15 @@ body {
 html {
   font-size: 100%; // 16px
 }
+
+body {
+  font-family: $sans;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.4;
+  color: $black-primary;
+}
+
 
 @media screen and (min-width: $sm-breakpoint) {
   html {
@@ -32,10 +41,3 @@ html {
 }
 
 
-body {
-  font-family: $sans;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.4;
-  color: $black-primary;
-}

@@ -110,23 +110,32 @@ http://flickity.metafizzy.co
 
 /* ---- page dots ---- */
 
-/* big buttons, no circle */
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
-  background: transparent;
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
 }
-/* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: $blue400;
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  filter: alpha(opacity=25); /* IE8 */
+  opacity: 0.25;
+  cursor: pointer;
 }
-.flickity-prev-next-button.no-svg {
-  color: $blue400;
-}
-.flickity-prev-next-button:hover {
-  background: transparent;
-}
-/* hide disabled button */
-.flickity-prev-next-button:disabled {
-  display: none;
+
+.flickity-page-dots .dot.is-selected {
+  filter: alpha(opacity=100); /* IE8 */
+  opacity: 1;
 }

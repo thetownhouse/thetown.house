@@ -1,0 +1,22 @@
+.header--site {
+  z-index: $layer5;
+  position: absolute;
+  width: 100%;
+  padding: $space 0;
+  height: 108px; // padding + logo height
+  border-bottom: 1px solid $black-divider;
+}
+
+
+.list--sitenav {
+  text-align: center;
+  > li {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: $epsilon;
+  }
+  a {
+    color: $black-primary;
+  }
+}
