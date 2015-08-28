@@ -3,7 +3,7 @@
   height: 600px;  
   position: relative;
   margin: $space-double 0;
-
+  border-bottom: 1px solid $black-divider;
 }
 
 
@@ -69,7 +69,6 @@
   list-style: none;
   text-align: center;
   padding: $space-double 125px;
-  border-top: 1px solid $black-divider;
   border-bottom: 1px solid $black-divider;
   li {
     display: inline-block;
