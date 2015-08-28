@@ -68,7 +68,7 @@
 .list--amenities {
   list-style: none;
   text-align: center;
-  padding: $space-double 25px;
+  padding: $space-double 125px;
   border-top: 1px solid $black-divider;
   border-bottom: 1px solid $black-divider;
   li {
@@ -76,7 +76,7 @@
     height: 177px; // size of bg image
     width: 177px;
     margin: 0 11px 22px;
-    background: url('../../img/bg-sun.png') no-repeat center center;
+    background: url('../img/bg-sun.png') no-repeat center center;
     padding: $space-double $space-32;
     line-height: 1.3;
   }
